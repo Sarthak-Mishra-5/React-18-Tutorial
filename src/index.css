@@ -20,6 +20,7 @@ body {
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
+    align-items: start;
   }
 }
 .book {
@@ -29,10 +30,26 @@ body {
   text-align: center;
 }
 .book img {
-  width: 100%;
+  width: 50%;
   object-fit: cover;
 }
 .book h2 {
   margin-top: 1rem;
   font-size: 1rem;
+}
+.book h4 {
+  color: #617d98;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  letter-spacing: 2px;
+}
+.book h4 {
+  /* won't work */
+  /* color: red; */
+  /* will work */
+  letter-spacing: 2px;
+}
+
+.book p {
+  margin: 1rem 0 0.5rem;
 }
